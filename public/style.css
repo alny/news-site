@@ -38,12 +38,12 @@ Author:		elemis
 	headings: #4d4d4d
 	meta: #9f9f9f;
 	dark wrapper background: #eeeeee;
-	
+
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-family: 'bebas_neuebold';
 	font-family: 'bebas_neuebook';
 	font-family: 'bebas_neue_regularregular';
-	
+
 -------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 /*	00. RESET
@@ -79,7 +79,7 @@ iframe {
     background: #fefac7; /* Firefox */
     color: #2f2f2f;
 }
-@-webkit-keyframes rotation { 
+@-webkit-keyframes rotation {
 	from {
 	    -webkit-transform: rotate(0deg)
 	}
@@ -87,7 +87,7 @@ iframe {
 	    -webkit-transform: rotate(359deg)
 	}
 }
-@-moz-keyframes rotation { 
+@-moz-keyframes rotation {
 	from {
 	    -moz-transform: rotate(0deg)
 	}
@@ -95,7 +95,7 @@ iframe {
 	    -moz-transform: rotate(359deg)
 	}
 }
-@-o-keyframes rotation { 
+@-o-keyframes rotation {
 	from {
 	    -o-transform: rotate(0deg)
 	}
@@ -103,7 +103,7 @@ iframe {
 	    -o-transform: rotate(359deg)
 	}
 }
-@keyframes rotation { 
+@keyframes rotation {
 	from {
 	    transform: rotate(0deg)
 	}
@@ -114,6 +114,16 @@ iframe {
 body {
     overflow-x: hidden !important
 }
+
+.form-wrapper{
+
+margin: 0 auto;
+width: 500px;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
 #preloader {
     position: fixed;
     top: 0;
@@ -566,7 +576,7 @@ footer ul.circled li:before {
     font-size: 15px;
     letter-spacing: 1px;
 }
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
 	.btn,
 	.btn-submit {
 	    padding: 10px 17px 10px
@@ -2781,19 +2791,19 @@ textarea {
 /*-----------------------------------------------------------------------------------*/
 /*	24. RESPONSIVE
 /*-----------------------------------------------------------------------------------*/
-@media (min-width: 1950px) { 
+@media (min-width: 1950px) {
 	.full-portfolio .isotope .item,
 	.full-portfolio .isotope .grid-sizer {
 	    width: 16.666666667%
 	}
 }
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-width: 992px) and (max-width: 1199px) {
 	.full-portfolio .isotope .item,
 	.full-portfolio .isotope .grid-sizer {
 	    width: 25%
 	}
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 	.nav.navbar-nav > li:last-of-type > ul {
 	    left: auto;
 	    right: 0;
@@ -2883,7 +2893,7 @@ textarea {
 	    }
 	}
 }
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
 	.navbar-brand {
 	    position: relative;
 	    -webkit-box-shadow: none;
@@ -3011,7 +3021,7 @@ textarea {
 	    margin-bottom: 10px !important
 	}
 }
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: 768px) and (max-width: 991px) {
 	.container {
 	    padding-right: 15px;
 	    padding-left: 15px;
@@ -3022,7 +3032,7 @@ textarea {
 	    width: 33.3339%
 	}
 }
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 	.full-portfolio .isotope .item,
 	.full-portfolio .isotope .grid-sizer,
 	.classic-masonry .isotope .item {

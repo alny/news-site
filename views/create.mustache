@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {{>head}}
+
+</head>
+<body>
+<div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+<div class="body-wrapper">
+
+      {{>nav}}
+
+        <div class="form-wrapper">
+
+          <form method="post" action="/create">
+
+            <input type="text" name="title" value="" placeholder="Title">
+            <input type="text" name="description" value="" placeholder="Description">
+            <input type="text" name="image" value="" placeholder="Image URL">
+            <input type="submit" name="name" value="Submit">
+
+          </form>
+
+        </div>
+
+
+
+
+      </div>
+
+  <footer class="footer black-wrapper">
+
+    {{>footer}}
+
+  </footer>
+  <!-- /footer -->
+</div>
+
+<!--/.body-wrapper -->
+
+
+
+{{>javascripts}}
+
+
+
+</body>
+</html>

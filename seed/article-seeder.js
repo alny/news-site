@@ -1,8 +1,8 @@
 var mongoose = require('mongoose');
 var Article = require('../models/article')
 
-var dbURL = 'mongodb://localhost/article'
-mongoose.connect(dbURL);
+// var dbURL = 'mongodb://localhost/article'
+// mongoose.connect(dbURL);
 
 var article = [
     new Article({
