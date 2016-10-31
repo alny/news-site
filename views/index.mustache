@@ -17,90 +17,24 @@
       <div class="col-sm-8 content">
         <div class="blog-posts grid-view col2">
           <div class="isotope row">
+
+            {{#article}}
             <div class="col-md-6 col-sm-12 post-grid">
               <div class="post">
-                <figure class="main"><a href="blog-post.html">
+                <figure class="main"><a href="#">
                   <div class="text-overlay">
-                    <div class="info"><span>Read More</span></div>
+                    <div class="info"><span></span></div>
                   </div>
-                  <img src="style/images/art/p1.jpg" alt="" /></a></figure>
-                <div class="meta"><span class="date">13 Nov 2012</span><span class="comments"><a href="#">8 <i class="icon-chat-1"></i></a></span></div>
-              <h2 class="post-title"><a href="blog-post.html">Adipiscing Mollis Inceptos</a></h2>
-                <p>Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor.</p>
+                  <img src="{{image}}" alt="" /></a></figure>
+                <div class="meta"><span class="date">{{updated}}</span><span class="comments"><a href="#"><i class="icon-chat-1"></i></a></span></div>
+              <h2 class="post-title"><a href="#">{{title}}</a></h2>
+                <p>{{description}}</p>
               </div>
               <!-- /.post -->
             </div>
-            <!-- /column -->
-            <div class="col-md-6 col-sm-12 post-grid">
-              <div class="post">
-                <figure class="main"><a href="blog-post.html">
-                  <div class="text-overlay">
-                    <div class="info"><span>Read More</span></div>
-                  </div>
-                  <img src="style/images/art/p2.jpg" alt="" /></a></figure>
-                <div class="meta"><span class="date">02 Jan 2013</span><span class="comments"><a href="#">5 <i class="icon-chat-1"></i></a></span></div>
-              <h2 class="post-title"><a href="blog-post.html">Ridiculus Ultricies Pellentesque</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus.</p>
-              </div>
-              <!-- /.post -->
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-sm-12 post-grid">
-              <div class="post">
-                <figure class="main"><a href="blog-post.html">
-                  <div class="text-overlay">
-                    <div class="info"><span>Read More</span></div>
-                  </div>
-                  <img src="style/images/art/p3.jpg" alt="" /></a></figure>
-                <div class="meta"><span class="date">14 Mar 2013</span><span class="comments"><a href="#">9 <i class="icon-chat-1"></i></a></span></div>
-              <h2 class="post-title"><a href="blog-post.html">Tristique Purus Pharetra</a></h2>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet.</p>
-              </div>
-              <!-- /.post -->
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-sm-12 post-grid">
-              <div class="post">
-                <figure class="main"><a href="blog-post.html">
-                  <div class="text-overlay">
-                    <div class="info"><span>Read More</span></div>
-                  </div>
-                  <img src="style/images/art/p4.jpg" alt="" /></a></figure>
-                <div class="meta"><span class="date">23 Dec 2013</span><span class="comments"><a href="#">6 <i class="icon-chat-1"></i></a></span></div>
-              <h2 class="post-title"><a href="blog-post.html">Inceptos Porta Nibh</a></h2>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-              </div>
-              <!-- /.post -->
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-sm-12 post-grid">
-              <div class="post">
-                <figure class="main"><a href="blog-post.html">
-                  <div class="text-overlay">
-                    <div class="info"><span>Read More</span></div>
-                  </div>
-                  <img src="style/images/art/p5.jpg" alt="" /></a></figure>
-                <div class="meta"><span class="date">27 Dec 2013</span><span class="comments"><a href="#">6 <i class="icon-chat-1"></i></a></span></div>
-              <h2 class="post-title"><a href="blog-post.html">Ultricies Tortor Malesuada</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-              </div>
-              <!-- /.post -->
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-sm-12 post-grid">
-              <div class="post">
-                <figure class="main"><a href="blog-post.html">
-                  <div class="text-overlay">
-                    <div class="info"><span>Read More</span></div>
-                  </div>
-                  <img src="style/images/art/p6.jpg" alt="" /></a></figure>
-                <div class="meta"><span class="date">22 Dec 2013</span><span class="comments"><a href="#">6 <i class="icon-chat-1"></i></a></span></div>
-              <h2 class="post-title"><a href="blog-post.html">Ligula Pharetra Euismod</a></h2>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-              </div>
-              <!-- /.post -->
-            </div>
-            <!-- /column -->
+            {{/article}}
+
+
           </div>
           <!-- /.isotope -->
 		</div>
