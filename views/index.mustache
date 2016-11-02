@@ -21,13 +21,13 @@
             {{#article}}
             <div class="col-md-6 col-sm-12 post-grid">
               <div class="post">
-                <figure class="main"><a href="#">
+                <figure class="main"><a href="/post?id={{_id}}">
                   <div class="text-overlay">
                     <div class="info"><span></span></div>
                   </div>
                   <img src="{{image}}" alt="" /></a></figure>
                 <div class="meta"><span class="date">{{updated}}</span><span class="comments"><a href="#"><i class="icon-chat-1"></i></a></span></div>
-              <h2 class="post-title"><a href="#">{{title}}</a></h2>
+              <h2 class="post-title"><a href="/post?id={{_id}}">{{title}}</a></h2>
                 <p>{{description}}</p>
               </div>
               <!-- /.post -->

@@ -2,16 +2,17 @@ var express = require('express');
 var router = express.Router();
 var Article = require('../models/article');
 
-var pages = ['index', 'create']
+var pages = ['index', 'create', 'post']
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  Article.find(function(err, docs){
+  Article.find(null, function(err, docs){
     res.render('index', {article: docs});
   });
 
+  });
 
 
 router.get('/:page', function(req, res, next){
@@ -43,10 +44,32 @@ router.post('/:page', function(req, res, next){
   })
 
 
-})
-
 });
 
+router.get('/:page', function(req, res, next) {
+
+    var page = req.params.page
+    if (pages.indexOf(page) == -1) {
+        res.render('error', {
+            message: 'Check your Spellin boooYYY!'
+        })
+        return
+      }
+
+    var id = req.query.id // Id number of Post we want to render
+    Article.findById(id, function(err, post) {
+        if (err) {
+            res.render('error', {
+                message: 'Page not found'
+            })
+            return
+        }
+
+        res.render(page, post)
+
+    })
+
+});
 
 
 
